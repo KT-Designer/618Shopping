@@ -20,7 +20,6 @@ body {
 
 .menu_pc a.active::before {
     content: "";
-    display: inline-block;
     position: absolute;
     top: 28%;
     left: -30px;
