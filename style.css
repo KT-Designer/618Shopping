@@ -1,0 +1,545 @@
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* 浮動主選單_監聽(.active配合JS) */
+.menu_pc a.active {
+    color: #00ffff;
+    position: relative;
+}
+
+.menu_pc a.active::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 28%;
+    left: -30px;
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/focus_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+/* PC導覽列 */
+.menu_pc {
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0000006f;
+    backdrop-filter: blur(4px);
+    padding: 16px 20px 16px 40px;
+    border-radius: 12px 0px 0px 12px;
+
+}
+
+.menu_pc li a {
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    padding: 12px 2px;
+    display: block;
+    white-space: nowrap;
+
+
+}
+
+.menu_pc li a:hover {
+    color: #00ffff;
+}
+
+.menu_pc ul {
+    padding-right: 4%;
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.menu_pc ul a {
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 0.25px solid #ffffff;
+}
+
+.menu_pc .top a {
+    border-bottom: 0px;
+    font-size: 26px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    padding: 0px;
+}
+
+.menu_pc .top {
+    margin-top: 10px;
+}
+
+
+/* 浮動主選單_手機 */
+.menu_MB {
+    display: none;
+    width: 100%;
+    margin: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    z-index: 2;
+    position: fixed;
+    bottom: 0px;
+}
+
+.menu_MB ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+.menu_MB ul li a {
+    display: inline-block;
+    width: 90px;
+    margin: 0px 1px;
+    padding: 14px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000a0;
+    backdrop-filter: blur(4px);
+}
+
+.menu_MB ul li a:hover {
+    color: #00ffff;
+}
+
+
+
+
+
+
+
+
+/* KV */
+.kv {
+    position: relative;
+}
+
+.kv .bgpc {
+    width: 100%;
+    height: auto;
+}
+
+.kv .point {
+    position: absolute;
+    top: 23%;
+    left: 43%;
+    width: 12%;
+}
+
+.kv .logo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 18%;
+}
+
+.kv .word {
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    width: 50%;
+    animation: word 3s alternate infinite ease-in-out;
+}
+
+
+
+@keyframes word {
+    0% {
+        transform: translateY(-4px);
+
+    }
+
+    50% {
+        transform: translateY(8px);
+
+    }
+
+
+    100% {
+        transform: translateY(-8px);
+
+    }
+
+
+}
+
+
+
+
+
+
+.kvcard {
+    position: absolute;
+    top: 18%;
+    right: 11%;
+    width: 22%;
+
+}
+
+.kvcard .carousel-item img {
+    width: 96%;
+}
+
+.kv .kvcard .carousel-indicators {
+    margin-bottom: -13%;
+    text-align: center;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 8%;
+
+}
+
+
+/* 浮動元素 */
+.bgpoint_L {
+    position: sticky;
+    top: 20%;
+    left: 30px;
+    width: 12%;
+    transform: rotate(90deg);
+}
+
+.bgpoint_R {
+    position: sticky;
+    top: 78%;
+    left: 84%;
+    width: 12%;
+    transform: rotate(-90deg);
+}
+
+/* 618必購 */
+.event,
+.top,
+.pc,
+.only,
+.esports,
+.businesspc,
+.brand {
+    text-align: center;
+    margin: 20px 16px 0px 16px;
+}
+
+.title {
+    margin: 2.6% 0px 10px 0px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.event .container {
+    max-width: 986px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.event .container img {
+    width: 100%;
+}
+
+
+
+.event .free,
+.event .coffee {
+    max-width: 986px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.event .coffee {
+    margin-top: -3%;
+
+}
+
+
+
+
+
+
+/* 今日限定 */
+.top .container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+
+}
+
+.top .container img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.top .container img:hover {
+    transform: translateY(-10px);
+}
+
+
+/* 獨家特談 */
+/* 搶手桌機 */
+/* 飆速效能 */
+/* 商用神器 */
+.cardbox {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: auto;
+    padding-left: 0px;
+}
+
+.cardbox a {
+    text-decoration: none;
+}
+
+.cardbox .card {
+    padding: 10px;
+    background-color: #00ffff47;
+}
+
+.cardbox .card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cardbox .card h1 {
+    font-size: 16px;
+    width: 100%;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    margin: 6px 0px;
+    transition: 0.5s;
+
+
+}
+
+
+.cardbox .card:hover {
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.cardbox .card:hover h1 {
+    background-color: #00ffff;
+    color: #000000;
+}
+
+.cardbox .card h2 {
+    font-size: 16px;
+    font-family: 'Noto Sans TC';
+    margin-bottom: 0px;
+    transition: 0.5s;
+    color: #FFFFFF;
+    height: 30px;
+
+}
+
+.cardbox .card:hover h2 {
+    color: #00ffff;
+}
+
+.cardbox .card .money {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.cardbox .card .money span {
+    font-size: 14px;
+}
+
+.cardbox .card .money .price {
+    font-size: 14px;
+    font-family: 'Roboto';
+    text-decoration: line-through;
+    color: #ffffff;
+}
+
+.cardbox .card .money .sale {
+    font-size: 26px;
+    font-family: 'Roboto';
+    font-weight: 800;
+    color: #ff57e0;
+
+}
+
+/* 熱銷品牌 */
+.brand .container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-top: 4%;
+}
+
+
+.brand .item {
+    position: relative;
+}
+
+
+
+.brand .item .in {
+    position: absolute;
+    top: 19%;
+    left: 19%;
+}
+
+.brand .container .out {
+    width: 100%;
+
+}
+
+
+.brand .item:hover .out {
+    animation: turn 2s infinite alternate;
+    border-radius: 50%;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(10deg);
+        box-shadow: 0px 0px 0px 0px #00ffffb8;
+    }
+
+    50% {
+        transform: rotate(-15deg);
+        box-shadow: 0px 0px 27px 0px #00ffffb8;
+    }
+
+    100% {
+        transform: rotate(15deg);
+        box-shadow: 0px 0px 0px 0px #00ffffb8;
+    }
+}
+
+
+.brand .container .in {
+    width: 65%;
+}
+
+
+
+/* footer */
+footer p {
+    color: #00ffff;
+    font-family: 'Noto Sans TC';
+    font-size: 14px;
+    padding: 7% 0% 1% 0%;
+}
+
+@media screen and (max-width:1200px) {
+
+    /* KV */
+    .kv .logo {
+        width: 22%;
+    }
+
+    .kv .point {
+        width: 14%;
+    }
+
+    .kv .word {
+        top: 16%;
+        left: 6%;
+        width: 56%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:576px) {
+
+    /* KV */
+    .kv .bgmb {
+        width: 100%;
+        height: auto;
+    }
+
+    .kv .logo {
+        width: 40%;
+    }
+
+    .kv .word {
+        width: 98%;
+        top: 6%;
+        left: 0%;
+    }
+
+
+
+
+
+
+
+    .kv .kvcard {
+        width: 70%;
+        top: auto;
+        bottom: 16%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .kvcard .carousel-item img {
+        width: 88%;
+        margin-left: 8%;
+    }
+
+
+    /* 今日限定 */
+    .top .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* 搶手桌機 */
+    .cardbox {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    /* 熱銷品牌 */
+    .brand .container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
