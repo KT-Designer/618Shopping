@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- 淡進淡出 -->
+    <link rel="stylesheet" href="./css/aos.css">
     <title>618盛典</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- Google tag (gtag.js) -->
@@ -22,7 +24,7 @@
 
 <body>
     <!-- PC導覽列 -->
-    <nav class="menu_pc d-none d-md-block">
+    <nav class="menu_pc d-none d-md-block" data-aos="fade-left" data-aos-duration="1000">
         <ul>
             <li class="anchor-link"><a href="#event">活動攻略</a></li>
             <li class="anchor-link"><a href="#top">今日限定</a></li>
@@ -100,12 +102,12 @@
     <!-- 618必購 -->
     <div class="event" id="event">
         <img class="title" src="./images/title_618.png" alt="">
-        <img class="free" src="./images/free.png" alt="">
-        <div class="container">
+        <img class="free" src="./images/free.png" alt="" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
             <img src="./images/100.png" alt="">
             <img src="./images/400.png" alt="">
         </div>
-        <img class="coffee" src="./images/coffee.png" alt="">
+        <img class="coffee" src="./images/coffee.png" alt="" data-aos="fade-up">
 
     </div>
 
@@ -117,12 +119,12 @@
     <div class="top" id="top">
         <img class="title" src="./images/title_top.png" alt="">
         <div class="container">
-            <img src="./images/top1.png" alt="">
-            <img src="./images/top2.png" alt="">
-            <img src="./images/top3.png" alt="">
-            <img src="./images/top4.png" alt="">
-            <img src="./images/top5.png" alt="">
-            <img src="./images/top6.png" alt="">
+            <img src="./images/top1.png" alt="" data-aos="fade-up">
+            <img src="./images/top2.png" alt="" data-aos="fade-up">
+            <img src="./images/top3.png" alt="" data-aos="fade-up">
+            <img src="./images/top4.png" alt="" data-aos="fade-up">
+            <img src="./images/top5.png" alt="" data-aos="fade-up">
+            <img src="./images/top6.png" alt="" data-aos="fade-up">
         </div>
     </div>
 
@@ -623,43 +625,43 @@
     <div class="brand" id="brand">
         <img class="title" src="./images/title_brand.png" alt="">
         <div class="container">
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="1000">
                 <img class="out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand1.png" alt="">
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="1000">
                 <img class="out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand2.png" alt="">
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="1000">
                 <img class="out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand3.png" alt="">
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="1000">
                 <img class="out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand4.png" alt="">
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="1000">
                 <img class="out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand5.png" alt="">
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="2000">
                 <img class="out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand6.png" alt="">
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="2000">
                 <img class="out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand7.png" alt="">
             </div>
-            <div class="item">
-                <img class="out" src="./images/brand0.png" alt="">
+            <div class="item" data-aos="fade-up" data-aos-duration="2000">
+                <img class=" out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand8.png" alt="">
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="2000">
                 <img class="out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand9.png" alt="">
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="2000">
                 <img class="out" src="./images/brand0.png" alt="">
                 <img class="in" src="./images/brand10.png" alt="">
             </div>
@@ -687,6 +689,11 @@
     <!-- JS -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <!-- 淡進淡出 -->
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
