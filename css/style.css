@@ -249,9 +249,12 @@ body {
 }
 
 .title {
-    margin: 2.6% 0px 10px 0px;
+    margin: 2.6% auto 10px;
     max-width: 600px;
     width: 100%;
+    display: block;
+
+
 }
 
 .event .container {
